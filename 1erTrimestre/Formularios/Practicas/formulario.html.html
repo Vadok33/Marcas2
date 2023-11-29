@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4600/4600312.png">
+    <title>EjerciciosFormularios</title>
+</head>
+<body>
+    <!-- Álvaro Elena Navarro - 1ºDAM -->
+    <!-- Los formularios están relacionados con los botones de submit a traves del ID-->
+    <!-- ejercicio 1 -->
+
+    <form id="01" action="" target="" method="">
+        <h1>Ejercicio 1. Formulario básico</h1>
+
+        <h2>Formulario de contacto</h2>
+
+        <Label name="nombre">Nombre: <strong>(Requerido)</strong></Label><br>
+        <input type="text" name="nombre" required><br><br>
+
+        <label for="" name="mail" >Email: <strong>(Requerido)</strong></label><br>
+        <input type="email" name="mail" id="" required><br><br>
+
+        <label for="asunt">Asunto: <strong>(Requerido)</strong></label><br>
+        <input type="text" name="asunt" id="" required><br><br>
+
+        <label for="" name="" >Mensaje: <strong>(Requerido)</strong></label><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí" required></textarea><br><br>
+
+    <!-- Aqui podría ir un "submit" pero no sale en el ejemplo  -->
+    </form>
+
+
+    <!-- ejercicio 2 -->
+
+    <form id="02" action="" target="" method="">
+        <h2>Ejercicio 2. Botones radio y campos de formulario</h2>
+            <fieldset>
+                <legend>Tipo de notas del alumno</legend> 
+                    <input type="radio" name="tiponota" id=""> Suspenso <br>
+                    <input type="radio" name="tiponota" id=""> Aprobado <br>
+                    <input type="radio" name="tiponota" id=""> Notable <br>
+                    <input type="radio" name="tiponota" id=""> Sobresaliente <br>
+
+            </fieldset>
+        <br>
+        <input type="submit" name="02" value="Enviar">
+    </form>
+
+    <!-- ejercicio 3 -->
+    
+    <br><h1>Ejercicio 3. Botones checkbox (selección múltiple)</h1>
+    
+        <form id="03" action="" target="" method="">
+            <h2>Asignaturas</h2><br>
+            <input type="checkbox" name="bbdd" id="">Base de datos <br>
+            <input type="checkbox" name="bbdd" id="">Entornos de desarrollo<br>
+            <input type="checkbox" name="bbdd" id="">Lenguaje de marcas<br>
+
+    
+            <br><input type="submit" name="03" value="Enviar">
+        </form>
+       
+    <!-- ejercicio 4 -->
+
+        <form id="04" action="" method="" target="">
+
+            <h1>Ejercicio 4. Seleccionar de una lista</h1>
+            <label for="genero">Género: </label>
+            <select name="" id="genero">
+                <option value="man">Masculino</option>
+                <option value="woman">Femenino</option>
+                <option value="retard" selected>No binario</option>
+            </select>
+
+            <br><br><input type="submit" name="" id="04" value="Enviar">
+
+        </form>
+
+    <!-- ejercicio 5 -->
+
+        <form id="05" method="" target="" action="">
+            <h1>Ejercicio 5. Seleccionar de una lista múltiple opciones</h1>
+
+            <br><label for="peliculas">Selecciona cateorías de peliculas:</label><br>
+            <select name="peliculas" id="peliculas" multiple>
+                <option value="action">Acción</option>
+                <option value="comedy">Comedia</option>
+                <option value="romance">Romántica</option>
+                <option value="kids">Infantil</option>
+                <option value="terror">Miedo</option>
+            </select>
+
+            <input type="submit" value="Enviar" id="05">
+
+        </form>
+
+    <!-- ejercicio 6 -->
+
+        <form id="06" action="" target="" method="">
+            <h1>Ejercicio 6. Formularios mixtos y botón de reseteo</h1>
+            <fieldset>
+                <legend>Información personal</legend><br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id=""><br><br>
+                <label for="dir">Direccion: </label>
+                <input type="text" name="dir" id=""><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Información de pago</legend><br>
+                <label for="tipotarjeta">Tipo de tarjeta</label>
+                <select name="tipotarjeta" id="">
+                    <option value="tipotarjeta">Visa</option>
+                    <option value="tipotarjeta">Mastercard</option>
+                    <option value="tipotarjeta">American Express</option>
+                </select><br><br>
+                <label for="numcard">Número de tarjeta: </label>
+                <input type="text" name="numcard"><br><br>
+                <label for="datecard">Fecha de caducidad: </label>
+                <input type="date" name="datecard"><br><br>
+                <input type="checkbox" name="" id=""> Enviarme una copia del pago <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Información de envío</legend><br>
+                <label for="infoparcel">¿Cuando desea recibir el envío?</label><br><br>
+                <input type="radio" id="" name="infoparcel"> Hoy <br>
+                <input type="radio" id="" name="infoparcel"> Mañana <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Preferencias de newsletter</legend><br>
+                <input type="checkbox" id="art"> Arte    <br>
+                <input type="checkbox" id="tv"> Televisión   <br> 
+                <input type="checkbox" id="games"> Videojuegos   <br> 
+                <input type="checkbox" id="sport"> Deportes    <br>
+            </fieldset>
+
+            <br><input type="submit" name="" id="06" value="Enviar">
+                <button id="reset">Borrar</button>
+        </form>
+
+
+</body>
+</html>
